@@ -1,2 +1,4 @@
 .vscode
 *sqlite*
+*__pycache__*
+venv/
