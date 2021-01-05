@@ -55,7 +55,7 @@ def WeatherHandler(cityname):
     
         # print following values 
         return(" Temperature: " +
-                        str(current_temperature - 273) +
+                        str(round(current_temperature - 273,2)) +
             "\N{DEGREE SIGN}C\n Weather: " +
                         str(weather_description)) 
     
@@ -63,4 +63,4 @@ def WeatherHandler(cityname):
         return (" City Not Found ") 
 
 # Try this sample by uncommenting it
-# print(WeatherHandler("Mohali"))
+print(WeatherHandler("Mohali"))
