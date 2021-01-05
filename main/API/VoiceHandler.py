@@ -33,4 +33,4 @@ def ExtractText(audioFile):
     return extractedText
 
 # Check the feature by uncommenting the following line
-print(ExtractText("API/audios/VoiceSample.m4a"))
+# print(ExtractText("API/audios/VoiceSample.m4a"))

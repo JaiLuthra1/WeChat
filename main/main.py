@@ -1,6 +1,7 @@
 import json 
 import requests
 import time
+from API import VoiceHandler
 
 # TODO: Jai Luthra
 TOKEN = "1547146270:AAETQgCJBWkc60fomzJOIgSVgY9GE4YbfYs"
@@ -26,6 +27,20 @@ def get_updates(offset=None):
         url += "?offset={}".format(offset)
     js = get_json_from_url(url)
     return js
+
+
+def get_voice_input(file_id):
+    url = URL + "getFile?file_id=" + file_id
+    js = get_json_from_url(url)
+    file_path = js["result"]["file_path"]
+    url="https://api.telegram.org/file/bot"+TOKEN+"/"+file_path
+    r=requests.get(url)
+    with open("dummy.oga",'wb') as f: 
+        f.write(r.content)
+    f.close()
+    # ?
+    # return VoiceHandler.ExtractText("dummy.oga")
+    # TODO: Get text from dummy.oga
 
 
 def get_last_update_id(updates):
@@ -55,10 +70,11 @@ def handle_updates(updates):
         try:
             text = update["message"]["text"]
         except:
-            # TODO: Dipanshu Verma
-            # Exception handling for non-text
-            text="INVALID"
-            # TODO: Add voice message handling
+            try:
+                voice = update["message"]["voice"]
+                text=get_voice_input(voice["file_id"])
+            except:
+                text="INVALID"
         chat = update["message"]["chat"]["id"]
         if text.startswith("/"):
             # Command
