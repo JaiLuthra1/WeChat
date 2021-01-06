@@ -39,7 +39,7 @@ def get_voice_input(file_id):
         f.write(r.content)
     f.close()
     # ?
-    # return VoiceHandler.ExtractText("dummy.oga")
+    return VoiceHandler.ExtractText("dummy.oga")
     # TODO: Get text from dummy.oga
 
 
@@ -73,8 +73,9 @@ def handle_updates(updates):
             try:
                 voice = update["message"]["voice"]
                 text=get_voice_input(voice["file_id"])
-            except:
+            except Exception as e:
                 text="INVALID"
+                print(e)
         chat = update["message"]["chat"]["id"]
         if text.startswith("/"):
             # Command

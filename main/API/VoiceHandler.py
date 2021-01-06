@@ -1,5 +1,6 @@
 import speech_recognition as sr
 from pydub import AudioSegment
+import subprocess
 import os
 
 def CheckExtension(audioFile):
@@ -15,7 +16,12 @@ def CheckExtension(audioFile):
 
 def ExtractText(audioFile):
 
-    audioFile = CheckExtension(audioFile)
+    words = audioFile.split('.')
+    words[-1] = 'wav'
+    dest_filename = ".".join(words)
+    process = subprocess.run(['ffmpeg', '-i', audioFile, dest_filename])
+    subprocess.run(['rm',audioFile])
+    audioFile = dest_filename
 
     try:
         recognizer = recognizer = sr.Recognizer()
@@ -30,6 +36,7 @@ def ExtractText(audioFile):
     except sr.UnknownValueError: 
         extractedText="unknown error occured"
     
+    subprocess.run(['rm',audioFile])
     return extractedText
 
 # Check the feature by uncommenting the following line
