@@ -1,0 +1,11 @@
+{"QueriesAboutIITMandi": 
+  [{"tag": "branch_change",
+    "patterns": ["My score is", "My rank is", "What branch can I get?", "What branch is available?",
+       "branch possible to get?", "What is the opening and closing rank for"] 
+  }]
+}
+
+
+
+
+
