@@ -3,9 +3,10 @@ import requests
 import time
 from API import VoiceHandler
 
-# TODO: Jai Luthra
-TOKEN = "1547146270:AAETQgCJBWkc60fomzJOIgSVgY9GE4YbfYs"
 # TODO: Hide token
+BOT_NAME = "Il_servitore"
+BOT_CREATOR = "IIT Mandi"
+TOKEN = "1568387409:AAHzWMtLieiNtzbQcCRyqXI9zsL3oV5BjiQ"
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
@@ -38,9 +39,7 @@ def get_voice_input(file_id):
     with open("dummy.oga",'wb') as f: 
         f.write(r.content)
     f.close()
-    # ?
     return VoiceHandler.ExtractText("dummy.oga")
-    # TODO: Get text from dummy.oga
 
 
 def get_last_update_id(updates):
@@ -67,21 +66,31 @@ def start_bot():
 
 def handle_updates(updates):
     for update in updates["result"]:
+        # print(update)
         try:
-            text = update["message"]["text"]
+            message = update["message"]
+        except:
+            message = update["edited_message"]    
+        chat = message["chat"]["id"]
+        try:
+            text = message["text"]
         except:
             try:
-                voice = update["message"]["voice"]
+                voice = message["voice"]
                 text=get_voice_input(voice["file_id"])
             except Exception as e:
-                text="INVALID"
-                print(e)
-        chat = update["message"]["chat"]["id"]
+                send_message("Sorry, I didn't get you.", chat)
+                continue
+
         if text.startswith("/"):
             # Command
-            response = "Command not supported"
+            if(text=="/start"):
+                response=f"Hello! I am {BOT_NAME}. I can help you with any queries. To know the usage send \"/usage\""
+            elif(text=="/usage"):
+                response=f"I am {BOT_NAME}.\n\n- I can understand text and voice messages.\n\n - Currently, I know only English. I am learning a few more languages :)"
+            else:
+                response = "Command not supported. Please check usage."
         else:
-            # TODO: Ayushman Dixit
+            # TODO: Get response
             response = "Hi, you sent \"{}\"".format(text)
-            # TODO: get response
         send_message(response, chat)

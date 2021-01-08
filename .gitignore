@@ -2,3 +2,6 @@
 *sqlite*
 *__pycache__*
 venv/
+dummy.oga
+*.pyc
+now/
