@@ -1,8 +1,242 @@
 {"QueriesAboutIITMandi": 
-  [{"tag": "branch_change",
-    "patterns": ["My score is", "My rank is", "What branch can I get?", "What branch is available?",
-       "branch possible to get?", "What is the opening and closing rank for"] 
-  }]
+  [
+    {"tag": "branch",
+    "patterns": ["My JEE Advanced score is", "my score in jee adv is" ,"My jee advanced score is",
+    "My jee adv rank is","My jee advanced rank is","My JEE Advanced rank is", "What branch can I get?", 
+    "What branch is available?", "branch possible to get?", "branch that I can get", "branch that i can get",
+    "What are the opening and closing ranks for",
+    "branch possible for my jee adv rank", "branch possible for my JEE Advanced rank",
+    "branch possible for my jee advanced rank", "What is the cut-off for", "what is the cut-off for", 
+    "what is the cutoff for", "what is the cut off rank for", "what is the cut-off rank for"],
+    "responses": ["For all questions regarding seat allocation and cut-off ranks and scores, please visit josaa.nic.in to find out about past year's trends with respect to cut-offs.",
+    "There is no exact answer to that but you can find out more about the opening and closing ranks for each branch on josaa.nic.in",
+    "Due to varying trends in cut-off scores and ranks, there is no exact answer available at the moment. You may visit josaa.nic.in to find last year's cut-off rank and score related data."],
+    "context": [""]},
+    
+    {"tag":"location",    
+    "patterns":["Is IIT Mandi difficult to reach","to reach IIT Mandi","route to IIT Mandi","best way to reach IIT Mandi", 
+      "reaching IIT Mandi", "reaching IIT Mandi from","Is iit mandi difficult to reach","to reach iit mandi","route to iit mandi","best way to reach iit mandi", 
+      "reaching iit mandi", "reaching iit mandi from","reaching iit mandi","Is campus difficult to reach","to reach campus","route to campus","best way to reach campus", 
+      "reaching campus from","reaching campus","Is the campus difficult to reach","to reach the campus","route to the campus","best way to reach the campus", 
+      "reaching the campus", "reaching the campus from","Is iit mandi campus difficult to reach","to reach iit mandi campus","route to iit mandi campus",
+      "best way to reach iit mandi campus", "reaching iit mandi campus", "reaching iit mandi campus from","Is college campus difficult to reach","to reach college campus","route to college campus","best way to reach college campus", 
+      "reaching college campus", "reaching college campus from"],
+    "responses":["Your only concern should be to reach Chandigarh first. After that reaching Mandi is easy and from Mandi town, the institute bus can handle your journey to the campus. Find out more at: https://www.iitmandi.ac.in/institute/campus/how_to_reach.php",
+      "Once you reach Mandi, via Delhi or Chndigarh, your journey will be simplified by the institute bus that takes you from Mandi to the campus. Find out more at: https://www.iitmandi.ac.in/institute/campus/how_to_reach.php",
+      "You only need to be worried about reaching Chandigarh or Delhi. After that there are buses and taxis that ply between Mandi and Chandigarh. Once you reach mandi, the institute bus will take you to the campus. For more details, visit: https://www.iitmandi.ac.in/institute/campus/how_to_reach.php"],
+    "context":[""]},
+  
+     {"tag":"safety",
+      "patterns":["is the campus safe","safety in the campus","how safe is the campus", "are we safe at the campus","is the campus a safe place",
+        "is iit mandi campus safe","safety in iit mandi campus","how safe is iit mandi campus", "are we safe at iit mandi campus","is iit mandi campus a safe place"
+      ]
+
+     },
+
+    {"tag":"",
+        "patterns":[""],
+        "responses":[""],
+        "context":[""]},
+
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},
+
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},    
+
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},    
+
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},    
+
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},
+    
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},
+    
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},    
+    
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},    
+    
+    {"tag":"",
+         "patterns":[""],
+         "responses":[""],
+         "context":[""]},    
+        
+    {"tag":"",
+            "patterns":[""],
+            "responses":[""],
+            "context":[""]},
+    
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},
+    
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},    
+    
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},    
+    
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},    
+   
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},
+        
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},
+        
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},    
+        
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},    
+        
+    {"tag":"",
+          "patterns":[""],
+          "responses":[""],
+          "context":[""]},
+
+    {"tag":"",
+            "patterns":[""],
+            "responses":[""],
+            "context":[""]},
+    
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},
+    
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},    
+    
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},    
+    
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},    
+    
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},
+        
+    {"tag":"",
+            "patterns":[""],
+             "responses":[""],
+             "context":[""]},
+        
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},    
+        
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},    
+        
+    {"tag":"",
+             "patterns":[""],
+             "responses":[""],
+             "context":[""]},    
+            
+    {"tag":"",
+                "patterns":[""],
+                "responses":[""],
+                "context":[""]},
+        
+    {"tag":"",
+              "patterns":[""],
+              "responses":[""],
+              "context":[""]},
+        
+    {"tag":"",
+              "patterns":[""],
+              "responses":[""],
+              "context":[""]},    
+        
+    {"tag":"",
+              "patterns":[""],
+              "responses":[""],
+              "context":[""]},    
+        
+    {"tag":"",
+              "patterns":[""],
+              "responses":[""],
+              "context":[""]},    
+       
+    {"tag":"",
+              "patterns":[""],
+              "responses":[""],
+              "context":[""]},
+            
+    {"tag":"",
+              "patterns":[""],
+              "responses":[""],
+              "context":[""]},
+            
+    {"tag":"",
+     "patterns":[""],
+     "responses":[""],
+     "context":[""]},    
+            
+    {"tag":"",
+     "patterns":[""],
+     "responses":[""],
+     "context":[""]},    
+            
+    {"tag":"",
+     "patterns":[""],
+     "responses":[""],
+     "context":[""]}
+
+  ]
+
+
+  
 }
 
 
