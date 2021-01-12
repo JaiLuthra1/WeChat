@@ -107,21 +107,24 @@
     
     {"tag":"seatAllocationProcedure",
          "patterns":["meaning of freeze, float, slide in JoSAA","freeze in JoSAA seat allocation", "float in JoSAA Seat allocation","slide in JoSAA Seat allocation"],
-         "responses":[""],
+         "responses":["The seats are allocated in multiple rounds in JoSAA. After being allocated a seat in each round, the candidate may freeze, float, slide or reject the allotted seat. \n\t1)Freeze implies that candidate has accepted given seat and does not wish to participate in further rounds.\n\t2)Float implies that candidate would like to be considered for any branch or any institute on preference list.\n\t3)Slide implies that the candidate wants to be in the current allotted institute but still wants to be considered for preferable branches within that institute.\n\t4)Reject means that she does not want to continue and be considered for any further rounds of counselling."],
          "context":[""]},    
         
-    {"tag":"",
-            "patterns":[""],
-            "responses":[""],
+    {"tag":"JoSAAFeePaymentDocVerification",
+            "patterns":["where do I upload documents for JoSAA","which documents need to be uploaded","uploading documents",
+                  "document upload","JoSAA Document verification","JoSAA counselling fee payment","Payment of JoSAA counselling fee"],
+            "responses":["Kindly visit http://josaa.nic.in/ for information on document verification and JoSAAA counselling fee payment. For further clarification, contact your Zonal IIT or the organising institute.",
+                  "For information on JoSAA counselling fee payment and document verification details, visit http://josaa.nic.in/. You may contact your Zonal IIT or the organising institute for further clarification."],
             "context":[""]},
     
-    {"tag":"",
-          "patterns":[""],
-          "responses":[""],
+    {"tag":"PREPRank",
+          "patterns":["got a PREP rank","what does a PREP rank mean","what is preparatory course"],
+          "responses":["The Preparatory Course is a provision of PWD, SC and ST candidates only. In case there are vacancies in your category towards the end of seat allocation, you may be provisionally allotted one of these vacant seats. You will then have to attend the Preparatory Course of one year duration in one of the IITs during 2021-2022. If you pass in all subjects, you will be admitted into the allotted branch/IIT in the 2022-2023 session. Keep in mind that the provisional allotment is made based on your choice list. For more information, visit http://josaa.nic.in.",
+      "The Preparatory Course is a provision of PwD, SC and ST candidates only. If there are vacancies in your respective category, one of the vacant seats will be allotted to you provisionally. In such a case, you will have to attend the Preparatory Course, which has a duration of 1 year. After that you will be admitted into the allotted branch/IIT in the next academic session, if you pass in all subjects. The provisional allotment is done basis your choice list. For further clarification, visit http://josaa.nic.in."],
           "context":[""]},
     
-    {"tag":"",
-          "patterns":[""],
+    {"tag":"WhyIITMandi",
+          "patterns":["why should i join IIT Mandi","advantages of iit mandi","plus points of joining iit mandi","iit mandi and "],
           "responses":[""],
           "context":[""]},    
     
