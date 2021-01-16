@@ -69,7 +69,7 @@ def f(query):
       if err>ferr:
           ferr = err
           fclass = intent
-      return fclass
+  return fclass
 
 def chatbot_response(query):
     return f(query)
