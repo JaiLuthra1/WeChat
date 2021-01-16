@@ -1,59 +1,57 @@
-import logging
-import os
+import json 
+import requests
+import time
+from API import VoiceHandler
 from googlesearch import search
+from model import chatbot_response
 
-APP_NAME = "https://il-servitore.herokuapp.com/"
+# TODO: Hide token
+BOT_NAME = "Il_servitore"
+BOT_CREATOR = "IIT Mandi"
 TOKEN = "1568387409:AAHzWMtLieiNtzbQcCRyqXI9zsL3oV5BjiQ"
-
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-
-# Enable logging
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-                    level=logging.INFO)
-
-logger = logging.getLogger(__name__)
-
-PORT = int(os.environ.get('PORT', '8443'))
-# Define a few command handlers. These usually take the two arguments update and
-# context. Error handlers also receive the raised TelegramError object in error.
+URL = "https://api.telegram.org/bot{}/".format(TOKEN)
 
 
-def start(update, context):
-    """Send a message when the command /start is issued."""
-    update.message.reply_text('Hi!')
+def get_url(url):
+    response = requests.get(url)
+    content = response.content.decode("utf8")
+    return content
 
 
-def help(update, context):
-    """Send a message when the command /help is issued."""
-    update.message.reply_text('You said Help!')
+def get_json_from_url(url):
+    content = get_url(url)
+    js = json.loads(content)
+    return js
 
 
-"""Classify the message"""
-def category(message_text):
-    # return 1 # General
-    # return 2 # IIT Mandi
-    return 3 # Programming
+def get_updates(offset=None):
+    url = URL + "getUpdates"
+    if offset:
+        url += "?offset={}".format(offset)
+    js = get_json_from_url(url)
+    return js
 
 
-def reply(update, context):
-    """Reply to user message."""
-    answer = update.message.text
-    if category(update.message.text) != 1:
-        result = google_search(update.message.text, 1)
-        if result != "":
-            update.message.reply_text(f"{answer}\n\nFor more details, refer to {result}")
-        else:
-            update.message.reply_text(answer)
-    else:
-        update.message.reply_text(answer)
+def get_voice_input(file_id):
+    url = URL + "getFile?file_id=" + file_id
+    js = get_json_from_url(url)
+    file_path = js["result"]["file_path"]
+    url="https://api.telegram.org/file/bot"+TOKEN+"/"+file_path
+    r=requests.get(url)
+    with open("dummy.oga",'wb') as f: 
+        f.write(r.content)
+    f.close()
+    return VoiceHandler.ExtractText("dummy.oga")
 
 
-def error(update, context):
-    """Log Errors caused by Updates."""
-    logger.warning('Update "%s" caused error "%s"', update, context.error)
+def get_last_update_id(updates):
+    update_ids = []
+    for update in updates["result"]:
+        update_ids.append(int(update["update_id"]))
+    return max(update_ids)
+
 
 def google_search(query, max_results=1):
-
     result=""
 
     for j in search(query, tld="co.in", num=max_results, stop=max_results, pause=2): 
@@ -62,35 +60,51 @@ def google_search(query, max_results=1):
     return result
 
 
+def send_message(text, chat_id):
+    url = URL + "sendMessage?text={}&chat_id={}".format(text, chat_id)
+    get_url(url)
+
+
 def start_bot():
-    """Start the bot."""
-    # Create the Updater and pass it your bot's token.
-    # Make sure to set use_context=True to use the new context based callbacks
-    # Post version 12 this will no longer be necessary
-    updater = Updater(
-        TOKEN, use_context=True)
+    last_update_id = None
+    while True:
+        updates = get_updates(last_update_id)
+        if len(updates["result"]) > 0:
+            last_update_id = get_last_update_id(updates) + 1
+            handle_updates(updates)
+        time.sleep(0.5)
 
-    # Get the dispatcher to register handlers
-    dp = updater.dispatcher
 
-    # on different commands - answer in Telegram
-    dp.add_handler(CommandHandler("start", start))
-    dp.add_handler(CommandHandler("help", help))
+def handle_updates(updates):
+    for update in updates["result"]:
+        # print(update)
+        try:
+            message = update["message"]
+        except:
+            message = update["edited_message"]    
+        chat = message["chat"]["id"]
+        try:
+            text = message["text"]
+        except:
+            # try:
+            #     voice = message["voice"]
+            #     text=get_voice_input(voice["file_id"])
+            # except Exception as e:
+            send_message("Sorry, I didn't get you.", chat)
+            continue
 
-    # on noncommand i.e message - reply to message on Telegram
-    dp.add_handler(MessageHandler(Filters.text, reply))
+        if text.startswith("/"):
+            # Command
+            if(text=="/start"):
+                response=f"Hello! I am {BOT_NAME}. I can help you with any queries. To know the usage send \"/usage\""
+            elif(text=="/usage"):
+                response=f"I am {BOT_NAME}.\n\n- I can understand text and voice messages.\n\n - Currently, I know only English. I am learning a few more languages :)"
+            else:
+                response = "Command not supported. Please check usage."
+        else:
+            resp=chatbot_response(text)
+            g=google_search(text)
+            response=f"{resp}\n\nIn case you want to know more, head over to {g}"
+        send_message(response, chat)
 
-    # log all errors
-    dp.add_error_handler(error)
-
-    # Start the Bot
-    updater.start_webhook(listen="0.0.0.0",
-                          port=PORT,
-                          url_path=TOKEN)
-    # updater.bot.set_webhook(url=settings.WEBHOOK_URL)
-    updater.bot.set_webhook(APP_NAME + TOKEN)
-
-    # Run the bot until you press Ctrl-C or the process receives SIGINT,
-    # SIGTERM or SIGABRT. This should be used most of the time, since
-    # start_polling() is non-blocking and will stop the bot gracefully.
-    updater.idle()
+start_bot()
