@@ -1,5 +1,7 @@
 # IL-SERVITORE
 
+Telegram bot named Il_servitore(@Ilservitore_bot) to reply to your queries and help you do routine tasks.
+
 ## How to Run:
 
 - Install dependencies via
