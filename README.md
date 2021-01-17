@@ -15,3 +15,5 @@ Telegram bot named Il_servitore(@Ilservitore_bot) to reply to your queries and h
 - To run,
 
 `python3 main.py`
+
+For more details refer to [MANUAL GUIDE](./MANUAL_GUIDE.md)
