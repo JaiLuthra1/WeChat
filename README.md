@@ -12,6 +12,8 @@ Telegram bot named Il_servitore(@Ilservitore_bot) to reply to your queries and h
 
 `sudo apt install ffmpeg`
 
+- Download the database from [here](https://drive.google.com/file/d/1UosU4oEUXa-Yc2VZX3nTV6NNCH1BgxUw/view?usp=sharing)(~331 MB)
+
 - To run,
 
 `python3 main.py`
