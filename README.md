@@ -1,14 +1,11 @@
-# WeChat
+# IL-SERVITORE
 
-## Instructions:
+## How to Run:
 
-- Use TODO to mention incomplete codes. Add assignee names above and task below dummy code.
-- bot.py is the file to run the bot. Do not add any functionality in it.
-- Create separate files for each individual task.
+- Install dependencies via
 
-## Status:
+`pip3 install -r requirements.txt`
 
-Sevak_iitmandi_bot is hosted on Telegram.
-Go Have a chat.
+- To run,
 
-It responds with the message back and does not support commands now.
+`python3 main.py`
