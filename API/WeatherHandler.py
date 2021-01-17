@@ -1,4 +1,5 @@
 import requests, json
+import geocoder
 
 # Enter your API key here 
 api_key = "5480fd443a5bb2bbc47748bb808752c7"
@@ -6,12 +7,12 @@ api_key = "5480fd443a5bb2bbc47748bb808752c7"
 # base_url variable to store url 
 base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
-def WeatherHandler(cityname):
-    # Give city name 
-    city_name = cityname
+def WeatherHandler():
+    g = geocoder.ip('me')
+    lat,lon=g.latlng
     
     # complete_url variable to store 
-    complete_url = base_url + "appid=" + api_key + "&q=" + city_name 
+    complete_url = base_url + "appid=" + api_key + "&lat=" + str(lat) + "&lon=" + str(lon) 
     
     # get method of requests module 
     # return response object 
@@ -54,13 +55,10 @@ def WeatherHandler(cityname):
         weather_description = z[0]["description"] 
     
         # print following values 
-        return(" Temperature: " +
+        return("Temperature: " +
                         str(round(current_temperature - 273,2)) +
-            "\N{DEGREE SIGN}C\n Weather: " +
+            "\N{DEGREE SIGN}C\nWeather: " +
                         str(weather_description)) 
     
     else: 
-        return (" City Not Found ") 
-
-# Try this sample by uncommenting it
-print(WeatherHandler("Mohali"))
+        return ("Location Not Found!") 
