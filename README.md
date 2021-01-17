@@ -8,6 +8,10 @@ Telegram bot named Il_servitore(@Ilservitore_bot) to reply to your queries and h
 
 `pip3 install -r requirements.txt`
 
+- Install FFMPEG
+
+`sudo apt install ffmpeg`
+
 - To run,
 
 `python3 main.py`
