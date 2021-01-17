@@ -2,6 +2,13 @@ import speech_recognition as sr
 from pydub import AudioSegment
 import subprocess
 import os
+from gtts import gTTS
+
+
+def get_audio_file(text):
+    tts = gTTS(text=text, lang='en')
+    tts.save("file.mp3")
+
 
 def CheckExtension(audioFile):
     parts = audioFile.split('.')
