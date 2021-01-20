@@ -15,7 +15,7 @@
 
 - each question can have multiple patterns
 
-- class is indentied using patterns
+- class is identified using patterns
 
 
 ### Model:
