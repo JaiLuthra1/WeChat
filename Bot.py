@@ -27,7 +27,7 @@ word2vec_glove_file = get_tmpfile("glove.6B.100d.word2vec.txt")
 glove2word2vec(glove_file,word2vec_glove_file)
 model = KeyedVectors.load_word2vec_format(word2vec_glove_file)
 word_vectors = model.wv
-data_file = open('/home/harshit/Downloads/IITMandi (1).json').read()
+data_file = open('IITMandi (1).json').read()
 intents = json.loads(data_file)
 classno = 0
 def f(query):
