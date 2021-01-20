@@ -8,7 +8,7 @@
             ],
             "questions": ["which branch can I get according to my rank", "What was last year cut off rank for computer science at iit mandi"],
             "responses": [
-                "due to varying trends in cut-off scores and ranks, there is no exact answer available at the moment. You may visit josaa.nic.in to find last year's cut-off rank and score related data.", "for more rank v/s branch details visit this https://josaa.nic.in/Result/Result/currentorcr.aspx", "you can check at link below", "https: //josaa.nic.in/Result/Result/currentorcr.aspx"
+                "due to varying trends in cut-off scores and ranks, there is no exact answer available at the moment. You may visit josaa.nic.in to find last year's cut-off rank and score related data.", "for more rank v/s branch details visit this https://josaa.nic.in/Result/Result/currentorcr.aspx"
             ],
             "context": ["iitmandi"]
         },
@@ -73,7 +73,11 @@
             "tag": "sportssociety",
             "patterns": ["are sports promoted in college", "what games are played", "are sports equipments available to all in college", "how good is the badminton team", "is there a badminton court in the college", "how are sports facilities at iit mandi and what is sports society", "Is cricket ground open for all to play ", "how is the condition of swimming pool ", "does our team win in inter iit sports ? ", "do we have indoor games facilities in hostels ", "games at iit mandi", "sports activities at iit mandi", "sports events at IIT Mandi", "cricket", "badminton", "athletics", "basketball", "chess", "hockey", "lawn tennis", "table tennis", "volleyball", "weight-lifting", "football"],
             "questions": ["are sports promoted in college", "what games are played", "are sports equipments available to all in college", "how good is the badminton team", "is there a badminton court in the college", "how are sports facilities at iit mandi and what is sports society", "Is cricket ground open for all to play ", "how is the condition of swimming pool ", "does our team win in inter iit sports ? ", "do we have indoor games facilities in hostels "],
-            "responses": ["Yes, sports are very much encouraged in iit mandi.We have a team for every sport.Each sport has its own trainer and a faculty advisor ", "iit mandi has facilities for many sports like cricket, badminton, tennis, football, hockey and many more.You will be exposed to every sport in your 5 week induction program ", "Our badminton team is quite good ", "yes there are two courts in south campus and 6 courts in north campus ", "The Sports Society of IIT Mandi is run by students led by the Sports Secretary of the Student Gymkhana, alongside various staff members and faculty.It hosts the Freshers’ Sports Meet, Hostel General Championship, Aagaz(Inter - year tournament), and KPL(Kamand Premier League).The students are well - trained by coaches as players and are encouraged to participate in various tournaments nationally and most importantly, the Inter - IIT Sports Meet.It also includes the Hiking and Trekking club and the Mountain Biking Club.The students of IIT Mandi led by the Sports Secretary of Student Gymkhana run the Sports Society, alongside faculty and staff members.The Sports Society organizes the Freshers’ Sports Meet, Hostel General Championship, Aagaz(Inter - year tournament), and KPL(Kamand Premier League).Our well - trained coaches encourage and train the players to participate in various national tournaments, the most significant one being the Inter - IIT Sports Meet.The Hiking and Trekking Club and the Mountain Biking Club are included in the Sports Society.", "Cricket ground is open for all but cricket pitch is open onlyfor team ", "swimming pool is not open yet but it is 4.5 feet deep ", "Yes our many teams win medals and countless hearts in inter iit sports ", "Every hostel has common room equipped with a table tennis table and a television for recreational purposes.And yes you can bring your ludo there "],
+            "responses": ["Yes, sports are very much encouraged in iit mandi.We have a team for every sport.Each sport has its own trainer and a faculty advisor ",
+                "iit mandi has facilities for many sports like cricket, badminton, tennis, football, hockey and many more.You will be exposed to every sport in your 5 week induction program ", "sports equipements are available to all",
+                "Our badminton team is quite good ", "yes there are two courts in south campus and 6 courts in north campus ",
+                "The Sports Society of IIT Mandi is run by students led by the Sports Secretary of the Student Gymkhana, alongside various staff members and faculty.It hosts the Freshers’ Sports Meet, Hostel General Championship, Aagaz(Inter - year tournament), and KPL(Kamand Premier League).The students are well - trained by coaches as players and are encouraged to participate in various tournaments nationally and most importantly, the Inter - IIT Sports Meet.It also includes the Hiking and Trekking club and the Mountain Biking Club.The students of IIT Mandi led by the Sports Secretary of Student Gymkhana run the Sports Society, alongside faculty and staff members.The Sports Society organizes the Freshers’ Sports Meet, Hostel General Championship, Aagaz(Inter - year tournament), and KPL(Kamand Premier League).Our well - trained coaches encourage and train the players to participate in various national tournaments, the most significant one being the Inter - IIT Sports Meet.The Hiking and Trekking Club and the Mountain Biking Club are included in the Sports Society.", "Cricket ground is open for all but cricket pitch is open onlyfor team ", "swimming pool is not open yet but it is 4.5 feet deep ", "Yes our many teams win medals and countless hearts in inter iit sports ", "Every hostel has common room equipped with a table tennis table and a television for recreational purposes.And yes you can bring your ludo there "
+            ],
             "context": ["iitmandi"]
         },
 
@@ -189,7 +193,7 @@
             "tag": "FreshersAndLaptops",
             "patterns": ["freshers bring laptops", "allowed to bring laptops", "mattress", "supposed", "Are freshers allowed to bring laptops ? ", "Are freshers supposed to bring laptop ? ", "Are freshers supposed to bring mattress ? "],
             "questions": ["Are freshers allowed to bring laptops ? ", "Are freshers supposed to bring laptop ? ", "Are freshers supposed to bring mattress ? "],
-            "responses": ["Yes, freshers are allowed to bring laptops", "Freshers are allowed to bring laptops in the first semester.", "It will help you if you bring one.You can bring any type of laptop you have for beginning.", "No, vendors come at first day of admission, you can buy from them."],
+            "responses": ["Yes, freshers are allowed to bring laptops", "It will help you if you bring one.You can bring any type of laptop you have for beginning.", "No, vendors come at first day of admission, you can buy from them."],
             "context": ["iitmandi"]
         },
 
@@ -223,7 +227,7 @@
             "tag": "HolidaySchedule",
             "patterns": ["How is the schedule of college ", "What is the holiday plan of college ", "holiday schedule", "semester schedule", "do students get holidays", "semester breaks"],
             "questions": ["How is the schedule of college ", "What is the holiday plan of college "],
-            "responses": ["IIT Mandi has a generous holiday schedule. There are five working days every week, Monday to Friday. The weekends are holidays. Moreover, semester breaks are given from mid-June to early August and Winter break is from December to mid-February. However, the schedule of the online semester is a little different. Check it out here: http://iitmandi.ac.in/academics/calendar.php", "Generous amounts of holidays are given at IIT Mandi. In a week, Monday to Friday are working days and the weekends are holidays. In addition to this we have holidays for special occasions too. Semester breaks are given from mid-June to early August and from December to mid-February. The online semester has been subject to changes. Keep up with it here: http://iitmandi.ac.in/academics/calendar.php", "IIT Mandi has a fair holiday schedule. We have five working days per week, from Monday to Friday and the weekends are holidays. We also have holidays for special occasions and festivals. Semester breaks are given from mid-June to early August and from December to mid-February. The online semester has had a lot of changes. Keep up with the oline schedule by following this link: http://iitmandi.ac.in/academics/calendar.php"],
+            "responses": ["IIT Mandi has a generous holiday schedule. There are five working days every week, Monday to Friday. The weekends are holidays. Moreover, semester breaks are given from mid-June to early August and Winter break is from December to mid-February. However, the schedule of the online semester is a little different. Check it out here: http://iitmandi.ac.in/academics/calendar.php", "IIT Mandi has a fair holiday schedule. We have five working days per week, from Monday to Friday and the weekends are holidays. We also have holidays for special occasions and festivals. Semester breaks are given from mid-June to early August and from December to mid-February. The online semester has had a lot of changes. Keep up with the oline schedule by following this link: http://iitmandi.ac.in/academics/calendar.php"],
             "context": ["iitmandi"]
         },
 
@@ -255,7 +259,7 @@
             "tag": "programming_resources",
             "patterns": ["what is best programming language", "coding", "platform", "what should I learn", "what should i start with", "how to start with competitive programming", "ml", "What language should I learn", "Which platform is best for coding practice ", "What is best programming language to start with ", "how to start with ml ", "how to start with competitive programming "],
             "questions": ["What language should I learn", "Which platform is best for coding practice ", "What is best programming language to start with ", "how to start with ml ", "how to start with competitive programming "],
-            "responses": ["Python and JavaScript are easy-to-learn and therefore considered the best programming languages to learn for beginners.", "For competitive programming, URI, hackerearth, codechef, atcoder and codeforces are good platforms.For development, do as many projects as you can.For machine learning, have a look at Kaggle website.", "Python and JavaScript are easy - to - learn and therefore considered the best programming languages to learn for beginners.Once advanced, you can learn some frameworks in the same.", "Learn basic python and basic ml concepts like regression and implement them "],
+            "responses": ["Python and JavaScript are easy-to-learn and therefore considered the best programming languages to learn for beginners.", "For competitive programming, URI, hackerearth, codechef, atcoder and codeforces are good platforms.For development, do as many projects as you can.For machine learning, have a look at Kaggle website.", "Python and JavaScript are easy - to - learn and therefore considered the best programming languages to learn for beginners.Once advanced, you can learn some frameworks in the same.", "Learn basic python and basic ml concepts like regression and implement them ", "practice on platforms like codechef and codeforces"],
             "Context": ["programming"]
         },
 
@@ -292,7 +296,11 @@
             "tag": "programming_doubts",
             "patterns": [" prepare", " interviews", " gsoc", " preparation", "placement", " AI", "ML", "projects", "competitive programming", "in code", "resume", "deep learning", "open source", "find bugs", "what is gsoc", "How to find bugs in my code ", "How to prepare for my interviews ", "How do i prepare for gsoc ", "How to plan for placement ? ", "Importance of projects ", "How many minimum projects should be on my CV ", "How to make resume "],
             "questions": ["How to find bugs in my code ", "How to prepare for my interviews ", "How do i prepare for gsoc ", "How to plan for placement ? ", "Importance of projects ", "How many minimum projects should be on my CV ", "How to make resume "],
-            "responses": ["Use a debugger buddy", "Brush up your data structure skills and have at least 1 quality project with you with clear understanding.Hone your communication skills", "https: //www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiQw_j5i6PuAhXC4nMBHXqRCZYQFjAAegQIAhAC&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhow-to-prepare-for-gsoc-google-summer-of-code%2F&usg=AOvVaw0riFLjrp9TggGHP1ocJVG3", "Be proficient in at least 1 programming language. Learn basic data structures and keep practicing by giving contests on online platforms ", "Have at least 2 projects with you with code being open sourced", "Use any format(many available online) but make sure it is readable easily and should not contain any grammatical or spelling mistake"],
+            "responses": ["Use a debugger buddy", "Brush up your data structure skills and have at least 1 quality project with you with clear understanding.Hone your communication skills",
+                "https: //www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiQw_j5i6PuAhXC4nMBHXqRCZYQFjAAegQIAhAC&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhow-to-prepare-for-gsoc-google-summer-of-code%2F&usg=AOvVaw0riFLjrp9TggGHP1ocJVG3",
+                "Be proficient in at least 1 programming language. Learn basic data structures and keep practicing by giving contests on online platforms ", "projects are very important for your resume",
+                "Have at least 2 projects with you with code being open sourced", "Use any format(many available online) but make sure it is readable easily and should not contain any grammatical or spelling mistake"
+            ],
             "context": ["programming"]
         },
 
@@ -309,7 +317,7 @@
             "patterns": ["How to start web dev", "How to start with android dev", "Web development", "android dev", "game dev", "Html", "css", "js", "What is github", "open source", "development", "android"],
             "questions": ["How to start web dev", "How to start with android dev"],
             "responses": ["Visit this site http://blog.pc.iitmandi.co.in/web-development-for-freshers/ ", "There are various blogs and tutorials.You can visit https: //www.learnvern.com/course/android-tutorial "],
-            "context": [""]
+            "context": ["programming"]
         },
 
         {
@@ -350,7 +358,7 @@
             "questions": ["Thanks for help", "Thanks a lot", "Thank you so much"],
             "responses": ["Happy to help!", "Any time!", "My pleasure"],
             "context": ["general"]
-        },
+        }
 
     ]
 }

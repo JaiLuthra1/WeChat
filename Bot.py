@@ -1,4 +1,4 @@
-from spacy.lang.en.stop_words import STOP_WORDS
+#from spacy.lang.en.stop_words import STOP_WORDS
 import json
 from gensim.models import Word2Vec
 from gensim.test.utils import datapath, get_tmpfile
@@ -9,12 +9,12 @@ import wget
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
-ignore_words = STOP_WORDS
-stop = stopwords.words('english')
-stop = set(stop)
+#ignore_words = STOP_WORDS
+ignore_words= set(stopwords.words('english'))
+"""stop = set(stop)
 import zipfile
 for word in stop:
-  ignore_words.add(word)
+  ignore_words.add(word)"""
 
 """wvUrl = "http://nlp.stanford.edu/data/glove.6B.zip"
 zip_file = wget.download(wvUrl)
