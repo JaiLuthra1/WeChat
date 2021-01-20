@@ -15,6 +15,17 @@
 
 
 ### Model:
+- Using Gensim library
+
+- calculating minimum err for each class
+
+- calculating unknown words
+
+- minimizing error for each class
+
+- finding the correct class
+
+- finding correct question by question matching
 
 
 
