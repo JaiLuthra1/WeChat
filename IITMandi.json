@@ -1,0 +1,418 @@
+{
+    "QueriesAboutIITMandi": [{
+            "tag": "branch",
+            "patterns": ["branch with given rank", "computer science at my jee advanced rank", "jee advanced score", "jee advanced rank", "what branch can i get?",
+                "branch available", "branch possible", "opening and closing ranks ",
+                "branch possible for jee advanced rank", "score ", "iit mandi",
+                "cut-off marks", "cut off rank", "which branch can I get according to my rank", "What was last year cut off rank for computer science at iit mandi"
+            ],
+            "questions": ["which branch can I get according to my rank", "What was last year cut off rank for computer science at iit mandi"],
+            "responses": [
+                "due to varying trends in cut-off scores and ranks, there is no exact answer available at the moment. You may visit josaa.nic.in to find last year's cut-off rank and score related data.", "for more rank v/s branch details visit this https://josaa.nic.in/Result/Result/currentorcr.aspx", "you can check at link below", "https: //josaa.nic.in/Result/Result/currentorcr.aspx"
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "safety",
+            "patterns": ["safety in campus", "iit mandi campus safe", "roam around", "allowed at night", "woman safety", "female safety", "crime", "theft in campus", "is campus safe", "is it safe to romance around inside campus at night"],
+            "questions": ["is campus safe", "is it safe to romance around inside campus at night"],
+            "responses": ["Yes, indeed, IIT Mandi's beautiful campus is safe from natural calamities. You only need a sweater to protect against the cold. Girls too have a safe environment to carry out their educational and co-curricular activities.", "Yes, campus is awake till midnight, so it is very much safe even at night"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "weather",
+            "patterns": ["Is iit mandi cold", "Does temperature go below 0", "weather too cold", "low temperature", "too cold at the campus", "safe from cold", "protection against cold", "climate", "hypothermia", "winter", "0 degree Celsius", "chilling weather"],
+            "questions": ["Is iit mandi cold", "Does temperature go below 0"],
+            "responses": ["Yes, indeed, iit mandi is a very cold place. during winters, the temperature sometimes reaches sub-zero levels. it is highly necessary that you bring along some woollen wear and sweaters to keep yourself safe. hot r.o. filtered water is available at all times. room heaters are provided on a monthly payment basis too.",
+                "No,it doesn’t. Temperature is mostly around 4-5 degrees in winters."
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "societiesandclubs",
+            "patterns": ["societies and clubs of iit mandi", "club activities", "student societies", "club activities at iit mandi", "student societies at iit mandi", "clubs at iit mandi", "events organised by clubs at iit mandi", "student activities ", "What are some clubs and societies in iit mandi ? ",
+                "What club and student societies do at iit mandi ? "
+            ],
+
+            "questions ": [
+                "What are some clubs and societies in iit mandi ? ",
+                "What club and student societies do at iit mandi ? "
+            ],
+            "responses": ["IIT Mandi has various student-managed clubs under Technical, Cultural, Sports, Research and Academic Societies. There are independent clubs too. You can find a comprehensive list of the clubs and societies of IIT Mandi at these links: https://wiki.iitmandi.co.in/p/List_of_Societies_and_Clubs and https://gymkhana.iitmandi.co.in/",
+
+                "Here at IIT Mandi, the various clubs and societies organize contests, competitions and events organized and run by students. The complete list of clubs and various societies of IIT Mandi can be found in the following links: https://wiki.iitmandi.co.in/p/List_of_Societies_and_Clubs and https://gymkhana.iitmandi.co.in/"
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "culturalsociety",
+            "patterns": ["activities in cultural society", "cultural activities", "events organised by cultural club", "culturals at iit mandi", "co - curricular", "which clubs form cultural society", "How are the cultural activities in iit mandi", "what co - curricular activities happen in iit mandi",
+                "clubs in cultural society", "cultural events", "dance", "drama", "music", "theatre", "which clubs form cultural society", "How are the cultural activities in iit mandi", "what co - curricular activities happen in iit mandi"
+            ],
+            "questions": ["which clubs form cultural society", "How are the cultural activities in iit mandi", "what co - curricular activities happen in iit mandi"],
+            "responses": ["The various clubs under the Cultural Society of IIT Mandi welcome open participation from all students and it includes UDC, Photography and Moviemaking Club, Drama Club, Music Club, Designauts and Art geeks. It also conducts the events Kala, Exuberance, Adventure Time and Aakarshan. You may find out more at https://wiki.iitmandi.co.in/p/Cultural_Society",
+                "The Cultural Society of IIT Mandi consists of various clubs which welcome open participation from all students. The clubs included are UDC, Photography and Moviemaking Club, Drama Club, Music Club, Designauts and Art geeks. The hallmark events organised by the cultural society include Kala, Exuberance, Adventure Time and Aaakarshan. Find out more at https://wiki.iitmandi.co.in/p/Cultural_Society",
+                "There are various open clubs under the Cultural Society of IIT Mandi. They are UDC, Photography and Moviemaking Club, Drama Club, Music Club, Designauts and Art geeks. The CulSoc also organizes the following events: Kala, Exuberance, Adventure Time and Aaakarshan. Find out more at https://wiki.iitmandi.co.in/p/Cultural_Society"
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "technicalsociety",
+            "patterns": ["activities in technical society", "technical activities", "events organised by technical club", "clubs in technical society", "programming club", "robotronics club", "astronomy club", "sntc", "astrophysics", "robotics", "automation", "What is technical society or sntc", "which clubs are part of technical society", "what is the programming club", "what is robotronics club", "what events are organised by technical club", "is there a club for astronomy / astrophysics ", "coding", "software", "hardware", "technical"],
+            "questions": ["What is technical society or sntc", "which clubs are part of technical society", "what is the programming club", "what is robotronics club", "what events are organised by technical club", "is there a club for astronomy / astrophysics "],
+            "responses": ["The students of IIT Mandi innovate and experiment within the Technical Society of IIT Mandi, which is governed by the Science and Technology Council or SnTC, a student body advised by faculty. Explore more about it's clubs, activities and achievements at https://iitmandi.co.in/ and https://gymkhana.iitmandi.co.in/technical.html", "Technical clubs have many clubs and societies such as programming club, robotronics club, stac(astronomy club), Ecell, Yantrik club and Nirman club.", "https: //wiki.iitmandi.co.in/p/Programming_Club", "https://wiki.iitmandi.co.in/p/Robotronics_Club", "The technical clubs organise various events individually and also in collaboration. Two popular inter-club events are Utkarsh and Kamand Premier League which are two fests on different scales.", "Yes,there is an astronomy club consisting of many astronomy and astrophysics enthusiasts called STAC which also has its own fest named ‘Astrax’"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "sportssociety",
+            "patterns": ["are sports promoted in college", "what games are played", "are sports equipments available to all in college", "how good is the badminton team", "is there a badminton court in the college", "how are sports facilities at iit mandi and what is sports society", "Is cricket ground open for all to play ", "how is the condition of swimming pool ", "does our team win in inter iit sports ? ", "do we have indoor games facilities in hostels ", "games at iit mandi", "sports activities at iit mandi", "sports events at IIT Mandi", "cricket", "badminton", "athletics", "basketball", "chess", "hockey", "lawn tennis", "table tennis", "volleyball", "weight-lifting", "football"],
+            "questions": ["are sports promoted in college", "what games are played", "are sports equipments available to all in college", "how good is the badminton team", "is there a badminton court in the college", "how are sports facilities at iit mandi and what is sports society", "Is cricket ground open for all to play ", "how is the condition of swimming pool ", "does our team win in inter iit sports ? ", "do we have indoor games facilities in hostels "],
+            "responses": ["Yes, sports are very much encouraged in iit mandi.We have a team for every sport.Each sport has its own trainer and a faculty advisor ", "iit mandi has facilities for many sports like cricket, badminton, tennis, football, hockey and many more.You will be exposed to every sport in your 5 week induction program ", "Our badminton team is quite good ", "yes there are two courts in south campus and 6 courts in north campus ", "The Sports Society of IIT Mandi is run by students led by the Sports Secretary of the Student Gymkhana, alongside various staff members and faculty.It hosts the Freshers’ Sports Meet, Hostel General Championship, Aagaz(Inter - year tournament), and KPL(Kamand Premier League).The students are well - trained by coaches as players and are encouraged to participate in various tournaments nationally and most importantly, the Inter - IIT Sports Meet.It also includes the Hiking and Trekking club and the Mountain Biking Club.The students of IIT Mandi led by the Sports Secretary of Student Gymkhana run the Sports Society, alongside faculty and staff members.The Sports Society organizes the Freshers’ Sports Meet, Hostel General Championship, Aagaz(Inter - year tournament), and KPL(Kamand Premier League).Our well - trained coaches encourage and train the players to participate in various national tournaments, the most significant one being the Inter - IIT Sports Meet.The Hiking and Trekking Club and the Mountain Biking Club are included in the Sports Society.", "Cricket ground is open for all but cricket pitch is open onlyfor team ", "swimming pool is not open yet but it is 4.5 feet deep ", "Yes our many teams win medals and countless hearts in inter iit sports ", "Every hostel has common room equipped with a table tennis table and a television for recreational purposes.And yes you can bring your ludo there "],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "researchsociety",
+            "patterns": ["activities in research society", "organised by research society", "clubs of research society", "scri iit mandi", "What is research society ? ", "What are the events organized by research society"],
+            "questions": ["What is research society ? ", "What are the events organized by research society"],
+            "responses": ["The research society includes within itself SCRI, IEEE, ACM, ACM-W. Find out more in the following links: https://gymkhana.iitmandi.co.in/research.html, https://scri.iitmandi.ac.in/, https://ieee.iitmandi.ac.in/ ", "There are various long running events organised by them.It mainly has research based events.For more details, visit https: //wiki.iitmandi.co.in/p/List_of_Societies_and_Clubs#Research_Society"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "academicsociety",
+            "patterns": ["activities", "academic society", "academic council ", "role", "students", "what is academic society ? ", "are students included in academic council ", "what is the role of academic society ", "is there an academic society "],
+            "questions ": ["what is academic society ? ", "are students included in academic council ", "what is the role of academic society ", "is there an academic society "],
+            "responses": [
+                "The Senate and the UG Academic Council make up the Academic Society of IIT Mandi. The Senate is the topmost decision-making body that makes all the important decisions related to the academic matters of the Institute. The UG Academic Council is an informal academic body that communicates between all students and the Academic Affairs Secretary.", "Yes, students are included in academic society", "The Academic society maintains the course and curriculum related bridge between students and administration", "Yes, We have a separate and well established academic society"
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "RankListGirls",
+            "patterns": ["separate rank list for girls", "female-only supernumerary seats", "reservation for girls", "gender reservation", "Is there a separate rank list for girls ? ", "What are supernumerary seats "],
+            "questions": ["Is there a separate rank list for girls ? ", "What are supernumerary seats "],
+            "responses": ["There is no separate rank list for female candidates. Between the female supernumerary pool of seats and the gender-neutral pool of seats, female candidates first compete for the female-only seats and then for the gender-neutral seats. For this, the common rank list is only required. About 20% of the seats are categorized as female-only.",
+                "About 20% of the seats at IITs are categorised under female supernumerary. The female candidates first compete for the female-only seats and then for the gender neutral pool. So, there is no separate rank list for females. The common rank list is used to allocate seats."
+            ],
+            "context": ["iitmandi"]
+        },
+        {
+            "tag": "GirlsSpecialIncentive",
+            "patterns": ["special incentives for girl students", "fees for girls", "fee payment for female students",
+                "fee payment for girl students", "special incentives for female students", "fees for females", "fee waivers", "stipend for girls ", "iit mandi"
+            ],
+            "questions": ["What are special incentives for girls in iit mandi "],
+            "responses": [
+                "Irrespective of category and family income, all female students admitted to the 4 year B.Tech programme at IIT Mandi have a total fee waiver and Rs 1000 as stipend every month, for their first year at IIT Mandi. The merit scholarship will be provided for the entire four year duration, basis the following criteria: \n1)The candidate has a minimum SGPA of 7.0 for the previous two semesters\n 2)No disciplinary action was taken."
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "seatAllocationProcedure",
+            "patterns": ["freeze, float, slide in JoSAA", "freeze in JoSAA seat allocation", "float in JoSAA Seat allocation", "slide in JoSAA Seat allocation", "choosing a seat in JoSAA seat allocation", "How is seat allocation procedure or counselling is performed ? ", "what is freeze option in josaa counselling procedure ? ", "what is slide option in josaa counselling procedure ? ", "what is float option in josaa counselling procedure ? "],
+            "questions": ["How is seat allocation procedure or counselling is performed ? ", "what is freeze option in josaa counselling procedure ? ", "what is slide option in josaa counselling procedure ? ", "what is float option in josaa counselling procedure ? "],
+            "responses": ["The seats are allocated in multiple rounds in JoSAA. After being allocated a seat in each round, the candidate may freeze, float, slide or reject the allotted seat. \n\t1)Freeze implies that candidate has accepted given seat and does not wish to participate in further rounds.\n\t2)Float implies that candidate would like to be considered for any branch or any institute on preference list.\n\t3)Slide implies that the candidate wants to be in the current allotted institute but still wants to be considered for preferable branches within that institute.\n\t4)Reject means that she does not want to continue and be considered for any further rounds of counselling.", "Freeze implies that candidate has accepted given seat and does not wish to participate in further rounds", "Slide implies that the candidate wants to be in the current allotted institute but still wants to be considered for preferable branches within that institute ", "Float implies that candidate would like to be considered for any branch or any institute on preference list."],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "JoSAAFeePaymentDocVerification",
+            "patterns": ["where do I upload documents for JoSAA", "which documents need to be uploaded", "uploading documents",
+                "JoSAA Document verification", "JoSAA counselling fee payment", "Payment of JoSAA counselling fee", "how to pay fee for counselling and proceed with document verification "
+            ],
+            "questions": ["how to pay fee for counselling and proceed with document verification "],
+            "responses": ["Kindly visit http://josaa.nic.in/ for information on document verification and JoSAAA counselling fee payment. For further clarification, contact your Zonal IIT or the organising institute."],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "PREPRank",
+            "patterns": ["got a PREP rank", "what does a PREP rank mean", "what is preparatory course", "courses for PWD,SC,ST"],
+            "questions": ["What is preparatory course"],
+            "responses": ["The Preparatory Course is a provision of PWD, SC and ST candidates only. In case there are vacancies in your category towards the end of seat allocation, you may be provisionally allotted one of these vacant seats. You will then have to attend the Preparatory Course of one year duration in one of the IITs during 2021-2022. If you pass in all subjects, you will be admitted into the allotted branch/IIT in the 2022-2023 session. Keep in mind that the provisional allotment is made based on your choice list. For more information, visit http://josaa.nic.in."],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "WhyIITMandi",
+            "patterns": ["why should i join IIT Mandi", "advantages of iit mandi", "plus points of joining iit mandi", "what makes it special", "peculiarity of iit mandi"],
+            "questions": ["What makes iit mandi special"],
+            "responses": ["A:Unique curriculum with real-world design-oriented projects every year from 1st year to 4th year. Students work in teams across branches. Even in 1st and 2nd year, students do projects that are normally done only in 3rd and 4th year at other IITs. We have a friendly atmosphere with mingling of faculty and students, here at IIT Mandi. Students have easy access to faculty, Deans and the Director. The faculty participate in sports and other activities and eat in the mess along with students. The institute is indeed, a close knit community. Himachal is the most peaceful State in India. The campus is perfectly safe, especially for girls. Situated in the serene Uhl River Valley far from the pollution and congestion of the cities. With a healthy climate, the institute is warm in summer and cool in winter. We have excellent outdoor and indoor sports facilities here. Unique extracurricular activities include the Hiking & Trekking Club, the Mountain Biking Club and social outreach programs working with local school children. Himachal has many scenic spots such as Kullu, Manali, Manikaran hot springs, Dharamsala, where you can go for weekend outings with your friends."],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "campussitution ",
+            "patterns": ["Where do freshers live", "Where are hostels of 1 st year located", "Is construction on campus complete", "campus at Kamand", "freshers are accommodated", "facilities at iit mandi", "campuses completely constructed", "Where do freshers live", "Where are hostels of 1 st year located", "Is construction on", "is campus construction complete", "hostel life", "accomodation for Freshers"],
+            "questions": ["Where do freshers live", "Where are hostels of 1 st year located", "Is construction on campus complete"],
+            "responses": ["Freshers are to be accommodated at the North Campus, Kamand. The Phase 1 construction of South campus has been completed and North campus is to be completed in 2021. North and south campuses are contiguous and interconnected with walkways and roadways. Faculties and students are living on both the campuses. Academic activities are usually conducted in the North campus.",
+                "The North Campus in Kamand is where freshers are to be accommodated. The Phase 1 construction of the South campus is complete and the North campus is expected to be complete in 2021. The two campuses are contiguous and interconnected by walkways and roadways. Both campuses accommodate faculties and students. Academic activities are usually concentrated in the North Campus.",
+                "While the Phase 1 construction of South campus has been completed, the North campus is to be completed in 2021. Freshers will be accomodated in the North campus where most of the academic activities take place. Faculty and students are accommodated on both the campuses. The North and South campuses are contiguous and interconnected by walkways and roadways."
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "BranchChange",
+            "patterns": ["what is branch change criteria", "branch change", "criteria for branch change"],
+            "questions": ["What is the criteria for branch change "],
+            "responses": ["The branch change criteria solely depend on your CGPA for the first two semesters. Find out more at: http://iitmandi.ac.in/academics/branch_change.php"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "CoursesIn1stYear",
+            "patterns": ["What are the courses taught in 1 st year", "Are courses same for all branches in 1 st year ? ", "courses in first year", "curriculum for first year", "curriculum in 1st year", "subjects in first", "Are courses same for all branches in 1 st year ? "],
+            "questions": ["What are the courses taught in 1 st year", "Are courses same for all branches in 1 st year ? "],
+            "responses": ["The courses in 1st year include Electrical Systems around us, Computing and Data Science, Mathematics, Reverse Engineering, Graphics for Design, English, German, Applied Electronics and Engineering Thermodynamics. Find out more at http://www.iitmandi.ac.in/academics/courses.php and http://iitmandi.ac.in/academics/perspective_btech_curriculum.php", "yes same courses are taught in 1 st year"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "HostelRoomOccupancy",
+            "patterns": ["How is the hostel occupancy for students ", " Are hostels co - ed ? ", "how many people will be accommodated in one hostel room", "Number of people living in one room", "occupancy ", "people in a hostel", "co - ed"],
+            "Question": ["How is the hostel occupancy for students ", " Are hostels co - ed ? "],
+            "responses": ["The Hostel rooms are of single, double and triple occupancy. First year students usually get a shared room.", "No, hostel are not co - ed"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "FreshersAndLaptops",
+            "patterns": ["freshers bring laptops", "allowed to bring laptops", "mattress", "supposed", "Are freshers allowed to bring laptops ? ", "Are freshers supposed to bring laptop ? ", "Are freshers supposed to bring mattress ? "],
+            "Question": ["Are freshers allowed to bring laptops ? ", "Are freshers supposed to bring laptop ? ", "Are freshers supposed to bring mattress ? "],
+            "responses": ["Yes, freshers are allowed to bring laptops", "Freshers are allowed to bring laptops in the first semester.", "It will help you if you bring one.You can bring any type of laptop you have for beginning.", "No, vendors come at first day of admission, you can buy from them."],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "LaptopRecommendations",
+            "patterns": ["What type of laptop should I buy ? ", "what sort of laptop", "recommended laptop specifications", "laptop specs recommended", "what laptop should i buy"],
+            "Question": ["What type of laptop should I buy ? "],
+            "responses": ["While selecting an appropriate laptop, keep in mind its use in your student life, the mobility of your laptop and the budget you have allocated. As of January 2021, it is highly recommended that you have a laptop of 4 to 8 GB RAM and minimum of 256 GB Memory. Specs recommended may change with time and the laptop brand/model depends on your personal interests and other factors."],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "InternetConnectivity",
+            "patterns": ["internet at iit mandi", "connectivity at iit mandi", "network connectivity at iit mandi strong", "connectivity issues", "hostel internet"],
+            "questions": ["How is iit mandi campus internet"],
+            "responses": ["Yes, IIT Mandi provides high speed internet. There is no cap on usage either."],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "Books",
+            "patterns": ["Where to find books to study ? ", "How to get course textbooks ? ", "books available at library", "should I buy books", "can i get books at iit mandi's library", "what books should i buy", "course textbooks"],
+            "questions": ["Where to find books to study ? ", "How to get course textbooks ? "],
+            "responses": ["Although the copies of required books are limited in the library, you can always get the books in ebook format. The local book stores at IIT Mandi and also online stores can also help you get some books and the seniors can also lend/provide to you second hand copies.",
+                "The books specified by your teacher can be obtained in the Library. However, because it has limited copies, you may obtain the e-book version of these books. The local stores at IIT Mandi, your seniors and online stores can also provide you with the books you need."
+            ],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "HolidaySchedule",
+            "patterns": ["How is the schedule of college ", "What is the holiday plan of college ", "holiday schedule", "semester schedule", "do students get holidays", "semester breaks"],
+            "questions": ["How is the schedule of college ", "What is the holiday plan of college "],
+            "responses": ["IIT Mandi has a generous holiday schedule. There are five working days every week, Monday to Friday. The weekends are holidays. Moreover, semester breaks are given from mid-June to early August and Winter break is from December to mid-February. However, the schedule of the online semester is a little different. Check it out here: http://iitmandi.ac.in/academics/calendar.php", "Generous amounts of holidays are given at IIT Mandi. In a week, Monday to Friday are working days and the weekends are holidays. In addition to this we have holidays for special occasions too. Semester breaks are given from mid-June to early August and from December to mid-February. The online semester has been subject to changes. Keep up with it here: http://iitmandi.ac.in/academics/calendar.php", "IIT Mandi has a fair holiday schedule. We have five working days per week, from Monday to Friday and the weekends are holidays. We also have holidays for special occasions and festivals. Semester breaks are given from mid-June to early August and from December to mid-February. The online semester has had a lot of changes. Keep up with the oline schedule by following this link: http://iitmandi.ac.in/academics/calendar.php"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "DelhiOrChandigarhToMandi",
+            "patterns": ["How to reach mandi from delhi?", "How to reach iit campus from mandi city?", "routes to follow from Delhi to Mandi", "routes to follow from Chandigarh to Mandi", "reach to from", "iit mandi campus"],
+            "Question": ["How to reach mandi from delhi?", "How to reach iit campus from mandi city?"],
+            "responses": ["Mandi is easily accessible from the two places by bus or by cab. From Delhi ISBT(Kashmiri gate) there is a regular bus service: Volvo, Tata AC and ordinary buses go directly to Mandi. Same is the case for Chandigarh; besides, all buses from Delhi pass through Chandigarh. You can also take the train to Chandigarh, and from there from the ISBT at Sector 43 to Mandi by bus. At Mandi ISBT, you are right in front of our Transit Campus. From there take the Institute shuttle service to Kamand campus.", "From Mandi, you can get a private bus or institute bus.Institute busses are ply from Mandi every hour to institute.For more info checkout - https: //www.iitmandi.ac.in/institute/campus/how_to_reach.php"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "General",
+            "patterns": ["hi", "hello", "how are you", "who are you", "thank you", "name", "What is your name"],
+            "questions": ["hello", "hi", "how are you", "who are you", "thank you", "What is your name"],
+            "responses": ["Hii", "Hello", "I am fine", "I am a query bot", "My pleasure", "My name is IL_servitore"],
+            "context": ["general"]
+        },
+
+        {
+            "tag": "Funny",
+            "patterns": ["love", "hate", "gender", "date", "meet", "I love you", "I hate you", "what is your gender", "I want to date you", "Let’ s meet tonight"],
+            "questions": ["I love you", "I hate you", "what is your gender", "I want to date you", "Let’ s meet tonight"],
+            "responses": ["Really!! It’s my pleasure", "Ohh!Why dear", "I am neutral", "Sorry!I am busy", "I am busy"],
+            "context": ["general"]
+        },
+
+        {
+            "tag": "programming_resources",
+            "patterns": ["what is best programming language", "coding", "platform", "what should I learn", "what should i start with", "how to start with competitive programming", "ml", "What language should I learn", "Which platform is best for coding practice ", "What is best programming language to start with ", "how to start with ml ", "how to start with competitive programming "],
+            "questions": ["What language should I learn", "Which platform is best for coding practice ", "What is best programming language to start with ", "how to start with ml ", "how to start with competitive programming "],
+            "Responses": ["Python and JavaScript are easy-to-learn and therefore considered the best programming languages to learn for beginners.", "For competitive programming, URI, hackerearth, codechef, atcoder and codeforces are good platforms.For development, do as many projects as you can.For machine learning, have a look at Kaggle website.", "Python and JavaScript are easy - to - learn and therefore considered the best programming languages to learn for beginners.Once advanced, you can learn some frameworks in the same.", "Learn basic python and basic ml concepts like regression and implement them "],
+            "Context": ["programming"]
+        },
+
+
+
+        {
+            "tag": "programming books ",
+            "patterns": ["what are books for beginners for programming ", " begin ", "courses ", "coding ", "good tutorials ", "best book ", "resources ", "learn coding ", "What are some beginner books", "Are there any coursesfor coding ", "What are some good tutorials ", "What is best programming book "],
+            "questions": ["What are some beginner books", "Are there any courses for coding ", "What are some good tutorials ", "What is best programming book "],
+            "responses": ["As a beginner for competitive programming, you can learn C by Yashawant Kanetkar.For machine learning, you can start with Pattern Recognition and Machine Learning by Bishop but for development, you can follow tutorials.", "You can get some free courses on Udemy, also some websites like Codecademy and freeCodeCamp have tutorials to begin with.", "Codecademy, freeCodeCamp and Coursera are some good websites for programming tutorials.Also, you can check out some tutorials on youtube.", "Some good programming books include Introduction to Algorithms by Thomas H.Cormen, Pattern Recognition and Machine Learning by Bishop but the list in huge, depending on the field."],
+            "context": ["programming"]
+        },
+
+
+        {
+            "tag": "programming field ",
+            "patterns": ["What are different fields in computer science ? "],
+            "questions ": ["What are different fields in computer science ? "],
+            "responses ": ["Some of the many fields in computer science are Data Science, Software Engineering, Data Analysis, Frontend Development, Mobile Applications Development, Backend Development, Ethical Hacking, System Designing "],
+            "context": ["programming"]
+        },
+
+
+        {
+            "tag": "programming_culture",
+            "patterns": ["coding culture", "deep learning aura", "non cse students", "Machine learning", "coding environment", "How is the Coding Culture in iit mandi", "How is deep learning aura in iit mandi as compared to other iits ? ", "what is coding environmentfor non cse students "],
+            "questions": ["How is the Coding Culture in iit mandi", "How is deep learning aura in iit mandi as compared to other iits ? ", "what is coding environmentfor non cse students "],
+            "responses": ["Well, iit mandi is home to one of the most enthusiastic coders of the nation thanks to the presence of a very active programming club ", "Many student and faculty are working on cutting edge state of the art deep learning research and been publishing papers in various reputed conferences and journels.", ""],
+            "context": ["programming"]
+        },
+
+
+        {
+            "tag": "programming_doubts",
+            "patterns": [" prepare", " interviews", " gsoc", " preparation", "placement", " AI", "ML", "projects", "competitive programming", "in code", "resume", "deep learning", "open source", "find bugs", "what is gsoc", "How to find bugs in my code ", "How to prepare for my interviews ", "How do i prepare for gsoc ", "How to plan for placement ? ", "Importance of projects ", "How many minimum projects should be on my CV ", "How to make resume "],
+            "questions ": ["How to find bugs in my code ", "How to prepare for my interviews ", "How do i prepare for gsoc ", "How to plan for placement ? ", "Importance of projects ", "How many minimum projects should be on my CV ", "How to make resume "],
+            "responses": ["Use a debugger buddy", "Brush up your data structure skills and have at least 1 quality project with you with clear understanding.Hone your communication skills", "https: //www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiQw_j5i6PuAhXC4nMBHXqRCZYQFjAAegQIAhAC&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhow-to-prepare-for-gsoc-google-summer-of-code%2F&usg=AOvVaw0riFLjrp9TggGHP1ocJVG3", "Be proficient in at least 1 programming language. Learn basic data structures and keep practicing by giving contests on online platforms ", "Have at least 2 projects with you with code being open sourced", "Use any format(many available online) but make sure it is readable easily and should not contain any grammatical or spelling mistake"],
+            "context": ["programming"]
+        },
+
+        {
+            "tag": "AIML ",
+            "patterns": ["Difference between AI ML artificial intelligence machine learning"],
+            "questions": ["Difference between AI, ML ? "],
+            "responses": ["ML is a subset of AI in which the machine learns to perform a task by learning underlining patterns from a dataset which is feeded to it."],
+            "context": ["programming"]
+        },
+
+        {
+            "tag": "programming_development",
+            "patterns": ["How to start web dev", "How to start with android dev", "Web development", "android dev", "game dev", "Html", "css", "js", "What is github", "open source", "development", "android"],
+            "questions": ["How to start web dev", "How to start with android dev"],
+            "responses": ["Visit this site http://blog.pc.iitmandi.co.in/web-development-for-freshers/ ", "There are various blogs and tutorials.You can visit https: //www.learnvern.com/course/android-tutorial "],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "",
+            "patterns": [""],
+            "responses": [""],
+            "context": [""]
+        },
+
+        {
+            "tag": "fees",
+            "patterns": ["pay fees", "pay money", "e challan through SBI online", "fees for admission ", "submit fees ", "fee payment ", "payment ", "UPI ", "Gpay ", "Paytm ", "payment ", "fees ", "net banking ", "demand draft ", "cash ", "DD ", "How to pay fee ? ", "can we pay fees through sbi online", "What are the ways of fee payment ? ", "what I have to do for getting fee waiver in IIT MANDI ", "how to submit fees by offline mode "],
+            "questions": ["How to pay fee ? ", "can we pay fees through sbi online", "What are the ways of fee payment ? ", "what I have to do for getting fee waiver in IIT MANDI ", "how to submit fees by offline mode "],
+            "responses": ["Fees can be paid via online as well as offline mode.", " One can use SBI portal, Paytm and UPI for online payment.", "There are two ways of fees payment UPI/Netbanking for online While Demand Draft is required for Offline fee payment.", " For more queries related to fee payment or waiver visit http://iitmandi.ac.in/academics/fees.php or mail to fo@iitmandi.ac.in", "For fee payment in offline mode use demand draft"],
+            "context": ["iitmandi"]
+        },
+
+        {
+            "tag": "certificates",
+            "patterns": ["Do we need gap certificate", "I don’ t have hard copy of my marksheet", "Does soft copy of marksheet work instead of hard copy", "Does digilocker certificates works in place of scanned certificates", "When do we need income certificate", "Does affidavit have fixed format", "gap certificate or character certificate", "board certificate  and marksheet for", "certificate work instead", "certificate not available", "Income Certificate", "digilocker certificates in place of", "affidavit for", "certificate", "scanned", "soft copy", "digilocker", "income", "schoralship"],
+            "questions": ["Do we need gap certificate", "I don’ t have hard copy of my marksheet", "Does soft copy of marksheet work instead of hard copy", "Does digilocker certificates works in place of scanned certificates", "When do we need income certificate", "Does affidavit have fixed format"],
+            "responses": [" No, you don’t need gap certificate", "You can submit soft copy along with application stating to submit within 1 month", "Yes, It works under application", "Yes, digi locker certificates work instead of scanned certificates", "Those students whose family income is less than 5 lakhs per annum is required to submit income certificate", "yes, it has fixed format mentioned on website http://iitmandi.ac.in/academics/admissions.php"],
+            "context": ["iitmandi"]
+        },
+
+
+
+        {
+            "tag": "greeting",
+            "patterns": ["Hi,how are you?", "Hello", "Hey", "Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "questions": ["Hi,how are you?", "Hello", "Hey"],
+            "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+            "context": ["general"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "questions": ["Bye", "See you", "Thanks, Bye"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+            "context": ["general"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Thanks for help", "Thanks a lot", "Thank you so much"],
+            "questions": ["Thanks for help", "Thanks a lot", "Thank you so much"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"],
+            "context": ["general"]
+        },
+        {
+            "tag": "options",
+            "patterns": ["help", "support", "How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+            "questions": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+            "responses": ["I can guide you through Adverse drug reaction list, Blood pressure tracking, Hospitals and Pharmacies", "Offering support for Adverse drug reaction, Blood pressure, Hospitals and Pharmacies"],
+            "context": ["general"]
+        }
+    ]
+}
