@@ -22,7 +22,7 @@ with zipfile.ZipFile(zip_file, 'r') as zip_ref:
     zip_ref.extractall()"""
 
 
-glove_file = datapath("glove.6B.100d.txt")
+glove_file = "glove.6B.100d.txt"
 word2vec_glove_file = get_tmpfile("glove.6B.100d.word2vec.txt")
 glove2word2vec(glove_file,word2vec_glove_file)
 model = KeyedVectors.load_word2vec_format(word2vec_glove_file)

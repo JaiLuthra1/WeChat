@@ -183,10 +183,14 @@ Some of the supported commands are         \n
                 sendvoice(chat, reply_id)
         else:
             resp = ""
-            resp = chatbot_response(text)
-            g = google_search(text)
+            r = chatbot_response(text)
+            resp = r["answer"]
+            if resp["category"] == "iitmandi":
+                g = google_search(f"iit mandi {text}")
+            elif resp["category"] == "programming":
+                g = google_search(text)
             if g != "":
-                response = f"{resp}\n\nIn case you want to know more, head over to {g}"
+                response = f"{resp}\n\nHere is the link to the most similar page:\n{g}"
             else:
                 response = resp
             send_message(response, chat, reply_id)
