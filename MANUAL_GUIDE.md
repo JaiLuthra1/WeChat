@@ -11,7 +11,11 @@
 
 
 ### Database:
+- similar questions are in one class
 
+- each question can have multiple patterns
+
+- class is indentied using patterns
 
 
 ### Model:
