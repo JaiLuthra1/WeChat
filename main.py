@@ -188,11 +188,14 @@ Some of the supported commands are         \n
             resp = ""
             g=""
             que,resp,cat = chatbot_response(text)
-            cat=cat["context"][0]
-            if cat == "iitmandi":
-                g = google_search(f"iit mandi {text}")
-            elif cat == "programming":
-                g = google_search(text)
+            try:
+                cat=cat["context"][0]
+                if cat == "iitmandi":
+                    g = google_search(f"iit mandi {text}")
+                elif cat == "programming":
+                    g = google_search(text)
+            except:
+                g=""
             if g != "":
                 response = f"{resp}\n\nHere is the link to the most similar page:\n{g}"
             else:
