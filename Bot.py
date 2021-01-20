@@ -16,35 +16,39 @@ import zipfile
 for word in stop:
   ignore_words.add(word)
 
-wvUrl = "http://nlp.stanford.edu/data/glove.6B.zip"
+"""wvUrl = "http://nlp.stanford.edu/data/glove.6B.zip"
 zip_file = wget.download(wvUrl)
 with zipfile.ZipFile(zip_file, 'r') as zip_ref:
-    zip_ref.extractall()
+    zip_ref.extractall()"""
 
 
-glove_file = datapath("/glove.6B/glove.6B.100d.txt")
+glove_file = datapath("/home/harshit/glove.6B.100d.txt")
 word2vec_glove_file = get_tmpfile("glove.6B.100d.word2vec.txt")
 glove2word2vec(glove_file,word2vec_glove_file)
 model = KeyedVectors.load_word2vec_format(word2vec_glove_file)
 word_vectors = model.wv
-data_file = open('intents.json').read()
+data_file = open('/home/harshit/Downloads/IITMandi (1).json').read()
 intents = json.loads(data_file)
 classno = 0
 def f(query):
   fclass = None
   ferr = 0
+  fNotFound = 50
+  NotFound = 0
   query = nltk.word_tokenize(query)
   query = [lemmatizer.lemmatize(word.lower()) for word in query]
   for intent in intents["QueriesAboutIITMandi"]:
       err = 1
       NotFound = 0
       for qword in query:
+          qword = qword.lower()
           if qword in ignore_words:
                 continue
-          if qword not in word_vectors.vocab:              
+          if qword not in word_vectors.vocab:            
             u = False
             for pattern in intent["patterns"]:
                 w = nltk.word_tokenize(pattern)
+                w = [word.lower() for word in w]
                 if qword in w:
                     u = True
                     break
@@ -55,14 +59,17 @@ def f(query):
               for pattern in intent["patterns"]:
                   w = nltk.word_tokenize(pattern)
                   for word in w:
+                    word = word.lower()
                     if word in ignore_words:
                         continue
                     try:
-                      terr = max(terr,model.similarity(lemmatizer.lemmatize(qword),lemmatizer.lemmatize(word.lower())))
+                      terr = max(terr,model.similarity(lemmatizer.lemmatize(qword),lemmatizer.lemmatize(word)))
                     except:
                       pass
               err *= terr
-      if err>ferr:
+      if err-NotFound*0.02>ferr-fNotFound*0.02:
           ferr = err
+          fNotFound = NotFound
           fclass = intent
-      return fclass
+      
+  return fclass
