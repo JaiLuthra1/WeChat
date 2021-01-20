@@ -37,7 +37,7 @@
                 "What club and student societies do at iit mandi ? "
             ],
 
-            "questions ": [
+            "questions": [
                 "What are some clubs and societies in iit mandi ? ",
                 "What club and student societies do at iit mandi ? "
             ],
@@ -88,7 +88,7 @@
         {
             "tag": "academicsociety",
             "patterns": ["activities", "academic society", "academic council ", "role", "students", "what is academic society ? ", "are students included in academic council ", "what is the role of academic society ", "is there an academic society "],
-            "questions ": ["what is academic society ? ", "are students included in academic council ", "what is the role of academic society ", "is there an academic society "],
+            "questions": ["what is academic society ? ", "are students included in academic council ", "what is the role of academic society ", "is there an academic society "],
             "responses": [
                 "The Senate and the UG Academic Council make up the Academic Society of IIT Mandi. The Senate is the topmost decision-making body that makes all the important decisions related to the academic matters of the Institute. The UG Academic Council is an informal academic body that communicates between all students and the Academic Affairs Secretary.", "Yes, students are included in academic society", "The Academic society maintains the course and curriculum related bridge between students and administration", "Yes, We have a separate and well established academic society"
             ],
@@ -180,7 +180,7 @@
         {
             "tag": "HostelRoomOccupancy",
             "patterns": ["How is the hostel occupancy for students ", " Are hostels co - ed ? ", "how many people will be accommodated in one hostel room", "Number of people living in one room", "occupancy ", "people in a hostel", "co - ed"],
-            "Question": ["How is the hostel occupancy for students ", " Are hostels co - ed ? "],
+            "questions": ["How is the hostel occupancy for students ", " Are hostels co - ed ? "],
             "responses": ["The Hostel rooms are of single, double and triple occupancy. First year students usually get a shared room.", "No, hostel are not co - ed"],
             "context": ["iitmandi"]
         },
@@ -188,7 +188,7 @@
         {
             "tag": "FreshersAndLaptops",
             "patterns": ["freshers bring laptops", "allowed to bring laptops", "mattress", "supposed", "Are freshers allowed to bring laptops ? ", "Are freshers supposed to bring laptop ? ", "Are freshers supposed to bring mattress ? "],
-            "Question": ["Are freshers allowed to bring laptops ? ", "Are freshers supposed to bring laptop ? ", "Are freshers supposed to bring mattress ? "],
+            "questions": ["Are freshers allowed to bring laptops ? ", "Are freshers supposed to bring laptop ? ", "Are freshers supposed to bring mattress ? "],
             "responses": ["Yes, freshers are allowed to bring laptops", "Freshers are allowed to bring laptops in the first semester.", "It will help you if you bring one.You can bring any type of laptop you have for beginning.", "No, vendors come at first day of admission, you can buy from them."],
             "context": ["iitmandi"]
         },
@@ -196,7 +196,7 @@
         {
             "tag": "LaptopRecommendations",
             "patterns": ["What type of laptop should I buy ? ", "what sort of laptop", "recommended laptop specifications", "laptop specs recommended", "what laptop should i buy"],
-            "Question": ["What type of laptop should I buy ? "],
+            "questions": ["What type of laptop should I buy ? "],
             "responses": ["While selecting an appropriate laptop, keep in mind its use in your student life, the mobility of your laptop and the budget you have allocated. As of January 2021, it is highly recommended that you have a laptop of 4 to 8 GB RAM and minimum of 256 GB Memory. Specs recommended may change with time and the laptop brand/model depends on your personal interests and other factors."],
             "context": ["iitmandi"]
         },
@@ -230,7 +230,7 @@
         {
             "tag": "DelhiOrChandigarhToMandi",
             "patterns": ["How to reach mandi from delhi?", "How to reach iit campus from mandi city?", "routes to follow from Delhi to Mandi", "routes to follow from Chandigarh to Mandi", "reach to from", "iit mandi campus"],
-            "Question": ["How to reach mandi from delhi?", "How to reach iit campus from mandi city?"],
+            "questions": ["How to reach mandi from delhi?", "How to reach iit campus from mandi city?"],
             "responses": ["Mandi is easily accessible from the two places by bus or by cab. From Delhi ISBT(Kashmiri gate) there is a regular bus service: Volvo, Tata AC and ordinary buses go directly to Mandi. Same is the case for Chandigarh; besides, all buses from Delhi pass through Chandigarh. You can also take the train to Chandigarh, and from there from the ISBT at Sector 43 to Mandi by bus. At Mandi ISBT, you are right in front of our Transit Campus. From there take the Institute shuttle service to Kamand campus.", "From Mandi, you can get a private bus or institute bus.Institute busses are ply from Mandi every hour to institute.For more info checkout - https: //www.iitmandi.ac.in/institute/campus/how_to_reach.php"],
             "context": ["iitmandi"]
         },
@@ -255,7 +255,7 @@
             "tag": "programming_resources",
             "patterns": ["what is best programming language", "coding", "platform", "what should I learn", "what should i start with", "how to start with competitive programming", "ml", "What language should I learn", "Which platform is best for coding practice ", "What is best programming language to start with ", "how to start with ml ", "how to start with competitive programming "],
             "questions": ["What language should I learn", "Which platform is best for coding practice ", "What is best programming language to start with ", "how to start with ml ", "how to start with competitive programming "],
-            "Responses": ["Python and JavaScript are easy-to-learn and therefore considered the best programming languages to learn for beginners.", "For competitive programming, URI, hackerearth, codechef, atcoder and codeforces are good platforms.For development, do as many projects as you can.For machine learning, have a look at Kaggle website.", "Python and JavaScript are easy - to - learn and therefore considered the best programming languages to learn for beginners.Once advanced, you can learn some frameworks in the same.", "Learn basic python and basic ml concepts like regression and implement them "],
+            "responses": ["Python and JavaScript are easy-to-learn and therefore considered the best programming languages to learn for beginners.", "For competitive programming, URI, hackerearth, codechef, atcoder and codeforces are good platforms.For development, do as many projects as you can.For machine learning, have a look at Kaggle website.", "Python and JavaScript are easy - to - learn and therefore considered the best programming languages to learn for beginners.Once advanced, you can learn some frameworks in the same.", "Learn basic python and basic ml concepts like regression and implement them "],
             "Context": ["programming"]
         },
 
@@ -273,8 +273,8 @@
         {
             "tag": "programming field ",
             "patterns": ["What are different fields in computer science ? "],
-            "questions ": ["What are different fields in computer science ? "],
-            "responses ": ["Some of the many fields in computer science are Data Science, Software Engineering, Data Analysis, Frontend Development, Mobile Applications Development, Backend Development, Ethical Hacking, System Designing "],
+            "questions": ["What are different fields in computer science ? "],
+            "responses": ["Some of the many fields in computer science are Data Science, Software Engineering, Data Analysis, Frontend Development, Mobile Applications Development, Backend Development, Ethical Hacking, System Designing "],
             "context": ["programming"]
         },
 
@@ -291,7 +291,7 @@
         {
             "tag": "programming_doubts",
             "patterns": [" prepare", " interviews", " gsoc", " preparation", "placement", " AI", "ML", "projects", "competitive programming", "in code", "resume", "deep learning", "open source", "find bugs", "what is gsoc", "How to find bugs in my code ", "How to prepare for my interviews ", "How do i prepare for gsoc ", "How to plan for placement ? ", "Importance of projects ", "How many minimum projects should be on my CV ", "How to make resume "],
-            "questions ": ["How to find bugs in my code ", "How to prepare for my interviews ", "How do i prepare for gsoc ", "How to plan for placement ? ", "Importance of projects ", "How many minimum projects should be on my CV ", "How to make resume "],
+            "questions": ["How to find bugs in my code ", "How to prepare for my interviews ", "How do i prepare for gsoc ", "How to plan for placement ? ", "Importance of projects ", "How many minimum projects should be on my CV ", "How to make resume "],
             "responses": ["Use a debugger buddy", "Brush up your data structure skills and have at least 1 quality project with you with clear understanding.Hone your communication skills", "https: //www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiQw_j5i6PuAhXC4nMBHXqRCZYQFjAAegQIAhAC&url=https%3A%2F%2Fwww.geeksforgeeks.org%2Fhow-to-prepare-for-gsoc-google-summer-of-code%2F&usg=AOvVaw0riFLjrp9TggGHP1ocJVG3", "Be proficient in at least 1 programming language. Learn basic data structures and keep practicing by giving contests on online platforms ", "Have at least 2 projects with you with code being open sourced", "Use any format(many available online) but make sure it is readable easily and should not contain any grammatical or spelling mistake"],
             "context": ["programming"]
         },
@@ -309,62 +309,6 @@
             "patterns": ["How to start web dev", "How to start with android dev", "Web development", "android dev", "game dev", "Html", "css", "js", "What is github", "open source", "development", "android"],
             "questions": ["How to start web dev", "How to start with android dev"],
             "responses": ["Visit this site http://blog.pc.iitmandi.co.in/web-development-for-freshers/ ", "There are various blogs and tutorials.You can visit https: //www.learnvern.com/course/android-tutorial "],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
-            "context": [""]
-        },
-
-        {
-            "tag": "",
-            "patterns": [""],
-            "responses": [""],
             "context": [""]
         },
 
@@ -388,7 +332,7 @@
 
         {
             "tag": "greeting",
-            "patterns": ["Who created you", "Who is your father", "Hi,how are you?", "Hello", "Hey", "Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "patterns": ["Who created you", "Who made you", "Who is your father", "Hi,how are you?", "Hello", "Hey", "Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
             "questions": ["Who created you", "Who is your father", "Hi,how are you?", "Hello", "Hey"],
             "responses": ["IIT Mandi created me", "I was built at IIT Mandi", "Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
             "context": ["general"]
@@ -405,13 +349,6 @@
             "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "Thanks for help", "Thanks a lot", "Thank you so much"],
             "questions": ["Thanks for help", "Thanks a lot", "Thank you so much"],
             "responses": ["Happy to help!", "Any time!", "My pleasure"],
-            "context": ["general"]
-        },
-        {
-            "tag": "options",
-            "patterns": ["help", "support", "How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-            "questions": ["How you could help me?", "What you can do?"],
-            "responses": ["I can guide you with your queries", "I can solve your queries"],
             "context": ["general"]
         }
     ]

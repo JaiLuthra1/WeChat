@@ -148,9 +148,12 @@ def handle_updates(updates):
         if text.startswith("/"):
             # Command
             if text == "/start":
-                name = (
-                    f' {message["from"]["first_name"]} {message["from"]["last_name"]}'
-                )
+                try:
+                    name = (
+                        f' {message["from"]["first_name"]} {message["from"]["last_name"]}'
+                    )
+                except:
+                    name=""
                 response = f'Hello{name}! I am {BOT_NAME}. To know the usage send "/usage" or "/help"'
             elif text == "/help" or text == "/usage":
                 response = f"""I am {BOT_NAME}. I can help you with your queries. Send me a message or a command.
@@ -183,11 +186,11 @@ Some of the supported commands are         \n
                 sendvoice(chat, reply_id)
         else:
             resp = ""
-            r = chatbot_response(text)
-            resp = r["answer"]
-            if resp["category"] == "iitmandi":
+            g=""
+            que,resp,cat = chatbot_response(text)
+            if cat == "iitmandi":
                 g = google_search(f"iit mandi {text}")
-            elif resp["category"] == "programming":
+            elif cat == "programming":
                 g = google_search(text)
             if g != "":
                 response = f"{resp}\n\nHere is the link to the most similar page:\n{g}"

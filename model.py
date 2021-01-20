@@ -71,8 +71,27 @@ def f(query):
           ferr = err
           fNotFound = NotFound
           fclass = intent
-      
-  return fclass
+  fq,fres = None,None
+  fferr = 0
+  for i in range(len(fclass["questions"])):
+    q = nltk.word_tokenize(fclass["questions"][i])
+    ferr = 1
+    for qword in query:
+      qword = qword.lower()
+      err = 0.00000000001
+      if qword not in word_vectors.vocab or qword in ignore_words:
+        continue
+      for word in q:
+        word = word.lower()
+        if word not in word_vectors.vocab or word in ignore_words:
+          continue
+        err = max(err,model.similarity(qword,word))
+      ferr *= err
+    if fferr<ferr:
+      fq = fclass["questions"][i]
+      fres = fclass["responses"][i]
+      fferr = ferr
+  return (fq,fres,fclass)
 
 def chatbot_response(query):
     return f(query)
