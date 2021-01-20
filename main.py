@@ -188,6 +188,7 @@ Some of the supported commands are         \n
             resp = ""
             g=""
             que,resp,cat = chatbot_response(text)
+            cat=cat["context"][0]
             if cat == "iitmandi":
                 g = google_search(f"iit mandi {text}")
             elif cat == "programming":
